@@ -68,7 +68,7 @@ public interface SessionStoreManager
     List<Long> findDirectParentsOfBlockedTasks(long lastId);
 
     // for WorkflowExecutor.propagateBlockedChildrenToReady
-    List<Long> findDirectParentsOfBlockedTasks(long lastId, String accountFilter);
+    List<Long> findDirectParentsOfBlockedTasksWithAccountFilter(long lastId, String acntFilter);
 
     boolean requestCancelAttempt(long attemptId);
 
